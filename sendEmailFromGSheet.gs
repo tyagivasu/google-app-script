@@ -11,12 +11,6 @@ function sendEmails() {
   var startRow = 2; // First row of data to process
   var numRows = 1000; // Number of rows to process
   var spreadsheet = SpreadsheetApp.getActiveSheet();
-//  fetch data for calendar id
-//  var calendarID = spreadsheet.getRange("G3").getValue();
-//  var eventCal = CalendarApp.getCalendarById(calendarID);
-//  var startTime = spreadsheet.getRange("E3").getValue();
-//  var endTime = spreadsheet.getRange("F3").getValue();
-  // Fetch the range of cells A:D
   var dataRange = spreadsheet.getRange(startRow, 1, numRows, 4);
   
   // Fetch values for each row in the Range.
